@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_job_search/models/new_data.dart';
-import 'package:ui_job_search/models/recomended_data.dart';
+import '../models/new_data.dart';
+import '../models/recomended_data.dart';
 import '../widget/card_two.dart';
 import '../widget/card_one.dart';
 
@@ -200,7 +200,7 @@ class HomePage extends StatelessWidget {
                       width: 10,
                     );
                   },
-                  itemCount: 3),
+                  itemCount: recomdata.length),
             ),
             Container(
               margin: const EdgeInsets.only(
@@ -245,7 +245,7 @@ class HomePage extends StatelessWidget {
                     height: 15,
                   );
                 },
-                itemCount: 5,
+                itemCount: newdata.length,
               ),
             )
           ],
